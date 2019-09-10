@@ -1,56 +1,79 @@
 {
-  "name": "webpack-starter",
-  "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
-  "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
-  },
-  "keywords": [
-    "webpack",
-    "startkit",
-    "frontend",
-    "es6",
-    "javascript",
-    "webdev"
+  "_args": [
+    [
+      "yargs-parser@5.0.0",
+      "C:\\Users\\user\\webpack-starter"
+    ]
   ],
-  "author": "webkid.io",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
+  "_development": true,
+  "_from": "yargs-parser@5.0.0",
+  "_id": "yargs-parser@5.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-J17PDX/+Bcd+ZOfIbkzZS/DhIoo=",
+  "_location": "/yargs-parser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "yargs-parser@5.0.0",
+    "name": "yargs-parser",
+    "escapedName": "yargs-parser",
+    "rawSpec": "5.0.0",
+    "saveSpec": null,
+    "fetchSpec": "5.0.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.2",
-    "babel-loader": "^8.0.5",
-    "clean-webpack-plugin": "^2.0.2",
-    "copy-webpack-plugin": "^5.0.3",
-    "css-loader": "^3.0.0",
-    "eslint": "^5.16.0",
-    "eslint-loader": "^2.1.2",
-    "file-loader": "^4.0.0",
-    "html-webpack-plugin": "^4.0.0-beta.5",
-    "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1",
-    "webpack-merge": "^4.2.1"
+  "_requiredBy": [
+    "/yargs"
+  ],
+  "_resolved": "https://registry.npmjs.org/yargs-parser/-/yargs-parser-5.0.0.tgz",
+  "_spec": "5.0.0",
+  "_where": "C:\\Users\\user\\webpack-starter",
+  "author": {
+    "name": "Ben Coe",
+    "email": "ben@npmjs.com"
+  },
+  "bugs": {
+    "url": "https://github.com/yargs/yargs-parser/issues"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.0",
-    "core-js": "^3.0.1",
-    "jquery": "^3.4.1",
-    "math-expression-evaluator": "^1.2.17",
-    "mathjs": "^6.2.1",
-    "node_modules-path": "^2.0.4"
-  }
+    "camelcase": "^3.0.0"
+  },
+  "description": "the mighty option parser used by yargs",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.12",
+    "mocha": "^3.0.1",
+    "nyc": "^10.0.0",
+    "standard": "^8.0.0",
+    "standard-version": "^4.0.0"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "homepage": "https://github.com/yargs/yargs-parser#readme",
+  "keywords": [
+    "argument",
+    "parser",
+    "yargs",
+    "command",
+    "cli",
+    "parsing",
+    "option",
+    "args",
+    "argument"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "yargs-parser",
+  "repository": {
+    "url": "git+ssh://git@github.com/yargs/yargs-parser.git"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "pretest": "standard",
+    "release": "standard-version",
+    "test": "nyc mocha test/*.js"
+  },
+  "version": "5.0.0"
 }

@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <p>Calculator</p>
+        <input type="number" name="Answer" id="input"/><br><br>
+        
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="product">*</button><br>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="subtract">-</button><br>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="plus">+</button><br>
+        <button id="zero">0</button>
+        <button id="decimal">.</button>
+        <button id="divide">/</button>
+
+           <button id="result">=</button>
+            <script>
+                let inputField = document.querySelector('#input');
+                let buttonArray = Array.from(document.querySelectorAll('button'));
+//                 buttonArray.forEach((item, index)=> {
+//                     console.log(indexedDB);
+//                     document.addEventListener('click', (event)=> {
+//                     inputField += event.target.value;
+// })
+            for(let i = 0; i < buttonArray.length; i++) {
+                buttonArray[i].addEventListener('click', function() {
+                    let buttonText = buttonArray[i].innerHTML;
+                    console.log(buttonText);
+                    inputField.innerText += buttonText;
+                    console.log(inputField);
+
+
+
+                })
+                
+            }
+                
+            </script>
+
+    </body>
+</html>
